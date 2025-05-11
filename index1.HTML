@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <button onclick="myworkingfunction(5)">Execute Javascript Function</button>
+    <button onclick="myhappyFunction()">You must click me!</button>
+    <p id="mysmartdemo"></p>
+    <p id="mysmartdemo1"></p>
+    <p id="mydepresseddemo"></p>
+    <script>
+        function myworkingfunction(x, y)
+        {
+            if (y===undefined)
+        {
+            y= 45
+        }
+        document.write(x*y) 
+        }
+        function mydepressedfunction(x, y)
+        {
+            if (y===undefined)
+        {
+            y= 45
+        }
+        return(x*y) 
+        }
+        document.getElementById("mydepresseddemo").innerHTML=mydepressedfunction(5)
+        function myhappyFunction(){
+            var k= 150
+            var l= 50
+            document.getElementById("mysmartdemo").innerHTML= k*l/k
+            document.getElementById("mysmartdemo1").innerHTML= k
+        }
+    </script>
+</body>
+</html>
